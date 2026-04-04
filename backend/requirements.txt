@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langgraph
+openai
+psycopg2-binary
+faiss-cpu
+python-dotenv
+sqlalchemy
+sentence-transformers
+numpy
+langchain-community
