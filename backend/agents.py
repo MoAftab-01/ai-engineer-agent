@@ -1,8 +1,11 @@
-from langchain_community.chat_models.ollama import ChatOllama
 from backend.tools import run_code
 
-llm = ChatOllama(model="llama3")
+from langchain_groq import ChatGroq
 
+llm = ChatGroq(
+    model="llama3-8b-8192",
+    temperature=0
+)
 
 # 🧠 Planner Agent
 def planner_agent(state):
