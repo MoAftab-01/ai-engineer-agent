@@ -16,6 +16,9 @@ def test():
 
 @app.get("/agent")
 def run_agent():
-    state = {"input": "Build a todo app"}
-    result = planner_agent(state)
-    return result
+    try:
+        state = {"input": "Build a todo app"}
+        result = planner_agent(state)
+        return result
+    except Exception as e:
+        return {"error": str(e)}
